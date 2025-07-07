@@ -1,0 +1,177 @@
+.fullPageLayout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.sidebar {
+  width: 220px;
+  background: #f9f9f9;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sidebar .activeTab,
+.sidebar button:hover {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 24px;
+  background: #f3f4f6;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subHeading {
+  font-size: 1.4rem;
+  margin: 20px 0 10px;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.productTile {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s;
+}
+
+.productTile:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.imagePlaceholder {
+  height: 160px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.desc {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin: 6px 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #111827;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+.tileActions {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.tileActions button {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.tileActions button:hover {
+  color: #1f2937;
+}
+
+/* Modal Styles */
+.modalContent form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modalContent form input,
+.modalContent form textarea,
+.modalContent form select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.modalContent form label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #374151;
+  margin-top: 6px;
+}
+
+.modalContent form label input[type="checkbox"],
+.modalContent form label input[type="radio"] {
+  margin: 0;
+  transform: scale(1.2);
+}
+
+.modalContent form button {
+  align-self: flex-start;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s ease;
+}
+
+.modalContent form button:hover {
+  background-color: #1d4ed8;
+}
+
+.formGrouplabel{
+  display: flex;
+  align-items: center;
+
+}

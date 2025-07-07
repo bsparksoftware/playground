@@ -1,0 +1,85 @@
+.container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: rgb(0, 0, 0);
+  font-family: 'boxicons', sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  animation: slideUp 0.7s ease-in;
+}
+
+.buttonGroup label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+.button {
+  width: 220px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #61dafb;
+}
+
+.sidebar {
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.list {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.list li {
+  margin-bottom: 0.8rem;
+  list-style-type: square;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

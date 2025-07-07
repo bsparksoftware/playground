@@ -1,0 +1,169 @@
+.layout {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+   animation: fadeIn 0.6s ease-in-out;
+}
+
+.main {
+  flex: 3;
+}
+
+.sideInfo {
+  flex: 1.2;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.heading {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1f2937;
+  text-align: center;
+}
+
+
+
+
+/* .layout {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.main {
+  flex: 3;
+}
+
+.sideInfo {
+  flex: 1.2;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.heading {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1f2937;
+  text-align: center;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.inputGroup,
+.inputGroupFull {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.5s ease;
+}
+
+.inputGroupFull {
+  flex: 1 1 100%;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #6366f1;
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+select {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #f9fafb;
+  color: #1f2937;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
+select:hover {
+  background-color: #f3f4f6;
+}
+
+.multiSelect {
+  height: 100px;
+}
+
+.inputGroup {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  animation: slideUp 0.4s ease both;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */

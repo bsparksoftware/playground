@@ -1,0 +1,74 @@
+.container {
+  text-align: center;
+  padding: 0.5rem;
+  animation: fadeIn 0.6s ease;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 1.5rem;
+}
+.disabledButton {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+  
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  margin-top: 1rem
+}
+.gender{
+  display: inline-block;
+  margin-left: 10px;
+}
+.message {
+  color: teal;
+  margin-top: 1.5rem;
+}
+
+.animatedBtn {
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.animatedBtn:hover {
+  transform: scale(1.05);
+}
+
+.sidebar {
+  padding: 1rem;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+}
+
+.heading {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.info {
+  font-size: 0.88rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}

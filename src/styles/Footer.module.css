@@ -1,0 +1,143 @@
+.footer {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  padding-top: 40px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.footerTop {
+  padding: 40px 20px;
+}
+
+.footerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  /* max-width: 1200px; */
+  margin: auto;
+}
+
+.footerColumn {
+  flex: 1 1 220px;
+  min-width: 200px;
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.contact a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.contact a:hover {
+  color: #ffc107;
+}
+
+.sectionTitle {
+  color: #ffc107;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+  color: #ffffff;
+  transition: transform 0.3s, color 0.3s;
+}
+.linkItem a {
+  color: inherit;
+  text-decoration: none;
+}
+.linkItem:hover {
+  color: #ffc107;
+  transform: translateX(4px);
+}
+
+.icon {
+  font-size: 0.8rem;
+}
+
+.footerBottom {
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+  background-color: #0f2027;
+  position: relative;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+.socials a {
+  color: white;
+  font-size: 1rem;
+  transition: transform 0.3s, color 0.3s;
+}
+.socials a:hover {
+  color: #ffc107;
+  transform: scale(1.2);
+}
+
+.scrollTop {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffc107;
+  color: #0f2027;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.scrollTop:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+.footerWrapper {
+  position: relative;
+  background: linear-gradient(270deg, #0f2027, #203a43, #2c5364);
+  background-size: 600% 600%;
+  animation: gradientShift 12s ease infinite;
+  overflow: hidden;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

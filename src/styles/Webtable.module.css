@@ -1,0 +1,73 @@
+.card {
+
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 153, 255, 0.2);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.heading {
+  font-size: 1.8rem;
+  color: rgb(53, 53, 53);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  animation: slideUp 0.6s ease;
+}
+
+.table thead {
+  background-color: slateblue;
+  color: white;
+  text-align: center;
+}
+
+.table tbody {
+  background-color: snow;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.sidebarContent {
+  font-size: 0.95rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+.sidebarContent ul {
+  padding-left: 1rem;
+}
+
+.sidebarContent li {
+  margin-bottom: 0.5rem;
+  list-style-type: square;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
