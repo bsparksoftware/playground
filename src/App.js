@@ -33,6 +33,7 @@ import LoginPage from './pages/LoginPage';
 function LayoutRoutes() {
   const location = useLocation();
 
+  
   const hideBothLayoutPaths = ['/button-frame', '/username-frame', '/username-input'];
   const hideSidebarOnlyPaths = ['/api-testing','/','/product-management','/login']; // Add more as needed
 
