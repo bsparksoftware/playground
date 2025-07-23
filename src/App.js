@@ -28,12 +28,15 @@ import UsernameInput from './pages/UsernameInput';
 import ApiTesting from './pages/ApiTesting';
 import ProductManagement from './pages/ProductManagement';
 import LoginPage from './pages/LoginPage';
+import Validation from './pages/Validation';
+
+
 
 
 function LayoutRoutes() {
   const location = useLocation();
 
-  
+
   const hideBothLayoutPaths = ['/button-frame', '/username-frame', '/username-input'];
   const hideSidebarOnlyPaths = ['/api-testing','/','/product-management','/login']; // Add more as needed
 
@@ -71,6 +74,8 @@ function LayoutRoutes() {
             <Route path="/api-testing" element={<ApiTesting />} />
             <Route path="/product-management" element={<ProductManagement />} />
            <Route path="/login" element={<LoginPage />} />
+
+              <Route path="/validate" element={<Validation />} />
 
 
 
