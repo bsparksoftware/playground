@@ -25,10 +25,9 @@ const items = [
   { path: '/condition', label: 'CONDITION', icon: <FaCodeBranch /> },
   { path: '/actionclass', label: 'ACTION CLASS', icon: <FaRunning /> },
   { path: '/frames', label: 'FRAMES', icon: <FaLayerGroup /> },
-  { path: '/text_attribute', label: 'TEXT AND ATTRIBUTE', icon: <FaFont /> }
+  { path: '/text_attribute', label: 'TEXT AND ATTRIBUTE', icon: <FaFont /> },
+  { path: '/validate', label: 'FORM VALIDATION', icon: <FaWindowRestore /> }
 ];
-
-
   return (
     <div className={`${styles.sidebar} ${collapsed ? styles.collapsed : ''}`}>
       <button className={styles.toggleBtn} onClick={toggleSidebar}>
